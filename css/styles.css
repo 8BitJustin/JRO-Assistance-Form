@@ -1,0 +1,17 @@
+body {
+  margin-top: 60px;
+  background-color: white;
+}
+
+.jumbotron {
+  background-color: #C0E1F0;
+}
+
+#warning {
+  color: red;
+  display: none;
+}
+
+#contact, #role, #loan, #stage, #name, #sit, #quest {
+	font-weight: bold;
+}

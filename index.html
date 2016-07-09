@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>JRO Assistance Form</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <div class="container">
+  
+  <div class="jumbotron">
+    
+    <div class="row">
+      
+      <div class="col-md-8 col-md-offset-2">
+        
+<!--    Selection Row -->
+        <div class="row"> 
+          
+          <div class="col-md-4">
+        
+            <label for="loan">Type of Contact:</label>
+            <select class="form-control" id="contact">
+              <option></option>
+              <option>Online Chat</option>
+              <option>Phone Call</option>
+              <option>Ticket</option>
+              <option>Walk-In</option>
+            </select>
+            
+          </div>
+          
+          <div class="col-md-4">
+            
+          <label for="role">Their role:</label>
+            <select class="form-control" id="role">
+              <option></option>
+              <option>Unknown</option>
+              <option>Production Assistant</option>
+              <option>LO/LC/Rep</option>
+              <option>Processor</option>
+              <option>UnderWriter</option>
+              <option>Branch Manager</option>
+            </select>
+            
+          </div>
+          
+          <div class="col-md-4">
+          
+          <label for="stage">Stage of Loan:</label>
+            <select class="form-control" id="stage">
+              <option></option>
+              <option>Unknown</option>
+              <option>Created</option>
+              <option>Credit Inquiry</option>
+              <option>Application Accepted</option>
+              <option>In Processing</option>
+              <option>UW Submitted</option>
+              <option>Submitted for Re-UW</option>
+              <option>Denied</option>
+              <option>Approved w/ Conditions</option>
+              <option>Pending Conditions</option>
+              <option>Conditions in Review - UW</option>
+              <option>Final Approval in Review</option>
+              <option>Clear to Close</option>
+              <option>Docs Ordered</option>
+              <option>Closing Disclosure Sent</option>
+              <option>Closing Docs Sent</option>
+            </select>
+          
+          </div>
+          
+        </div>
+        
+        <br />
+
+        <div class="form-group">
+          <label for="name">Contacts Name:</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+
+        <div class="form-group">
+          <label for="loan">Loan #:</label>
+          <input type="text" class="form-control" id="loan">
+        </div>
+
+        <div class="form-group">
+          <label for="sit">Situation:</label>
+          <textarea type="text" class="form-control" rows="3" id="sit"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="quest">Question:</label>
+          <input type="text" class="form-control" id="quest">
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-8">
+
+            <button type="button" class="btn btn-primary" onclick="generate()">Complete</button>
+
+            <button type="button" class="btn btn-primary" id="copyButton" onclick="copy('#request')">Copy to Clipboard</button>
+
+
+<!-- Refresh page function: http://www.htmlgoodies.com/tutorials/getting_started/article.php/3479551 -->
+            <button type="button" class="btn btn-primary clear" onclick="history.go(0)">Clear</button>
+
+          </div>
+          
+          <div class="col-md-4">
+            
+            <h4 id="warning">Please fill out all fields.</h4>
+
+          </div>
+
+        </div>
+
+        <br />
+
+        <div class="form-group">
+          <label for="request">Completed Request: (This is what you copy/paste into chat)</label>
+          <textarea class="form-control" rows="5" id="request"></textarea>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</div>  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+<!-- Created and maintained by Justin R. Olson 2016 -->
+
+</html>
