@@ -1,4 +1,4 @@
-// function test
+// Generate Function
 
 function generate() {
   
@@ -17,6 +17,7 @@ function generate() {
   } else {
     document.getElementById("request").innerHTML = contact.value + " / " + name.value + " / " + role.value + " / " + loan.value + " / " + stage.value + " / " + "The situation is: " + sit.value + " My question is: " + quest.value;
 
+    // Saved default template, not currently used.
     // document.getElementById("request").innerHTML = "Hello, I have a " + contact.value + "." + " Their name is " + name.value + ", and they're the " + role.value + " for Loan #" + loan.value + "." + " It's currently in the " + stage.value + " stage." + " Here's what's going on. " + sit.value + " Here's my question. " + quest.value;   
     
     document.getelementById("warning").style.display = "none";
@@ -28,7 +29,7 @@ function generate() {
 
 $('.dropdown-toggle').dropdown()
 
-// Copy - http://stackoverflow.com/questions/22581345/click-button-copy-to-clipboard-using-jquery
+// Copy Function - http://stackoverflow.com/questions/22581345/click-button-copy-to-clipboard-using-jquery
 
 function copy(element) {
   var $temp = $("<input>");
