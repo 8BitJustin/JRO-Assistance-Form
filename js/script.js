@@ -38,3 +38,11 @@ function copy(element) {
   document.execCommand("copy");
   $temp.remove();
 }
+
+
+// Added as 'easter egg' to change background color
+function changeColor() {
+    var colors = ["#2672EC", "#97009F", "#094DB5", "#00A300", "#DA532C", "#AF1A3F", "#613CBC", "#008AD2"]
+    var col = document.getElementById("jumbotronColor");
+    col.style.backgroundColor = colors[Math.floor((Math.random()*8)+1)];
+}

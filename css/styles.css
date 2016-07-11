@@ -1,6 +1,8 @@
 body {
   margin-top: 60px;
   background-color: white;
+  color: #fdf9f3;
+  text-shadow: 0px 1px 5px #3f3f3f;
 }
 
 .jumbotron {
