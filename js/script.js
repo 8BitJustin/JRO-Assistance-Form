@@ -40,9 +40,23 @@ function copy(element) {
 }
 
 
-// Added as 'easter egg' to change background color
+// Added as 'easter eggs'
+
+  // Changes background
 function changeColor() {
     var colors = ["#2672EC", "#97009F", "#094DB5", "#00A300", "#DA532C", "#AF1A3F", "#613CBC", "#008AD2"]
     var col = document.getElementById("jumbotronColor");
     col.style.backgroundColor = colors[Math.floor((Math.random()*8)+1)];
+}
+
+  // Turns screen into Asteroids
+function game() {
+  var name = prompt("Oh! You found me.. What is your name?");
+  var questionOne = prompt("Hello " + name + "." + " Do you want to play a game?" + " Yes or No");
+  var q1 = questionOne.toLowerCase();
+  if (q1 === "yes" || "y") {
+    var s = document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='http://hi.kickassapp.com/kickass.js';void(0);
+  } else {
+    alert("Too bad, I wanted to play...");
+  }
 }
