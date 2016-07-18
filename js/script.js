@@ -42,7 +42,7 @@ function copy(element) {
 
 // Added as 'easter eggs'
 
-  // Changes background
+  // Changes background (not currently active on page)
 function changeColor() {
     var colors = ["#2672EC", "#97009F", "#094DB5", "#00A300", "#DA532C", "#AF1A3F", "#613CBC", "#008AD2"]
     var col = document.getElementById("jumbotronColor");
