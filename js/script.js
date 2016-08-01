@@ -2,12 +2,13 @@
 // ticketPop function, for ticket input to appear
 // http://stackoverflow.com/questions/26709969/call-javascript-function-onchange-event-of-dropdown-list
 
-// Will uncomment once code is finished
-// function ticketPop() {
-//   if(document.getElementById('contact').value === "ticket") {
-//       alert("Your message");
-//   };
-// };
+function ticketPop() {
+  if(document.getElementById('contact').value === "ticket") {
+    document.getElementById("ticketSlot").style.display = "block";
+  } else {
+    document.getElementById("ticketSlot").style.display = "none";
+  };
+};
 
 // Generate Function
 
@@ -20,19 +21,20 @@ function generate() {
   var stage = document.getElementById('stage');
   var sit = document.getElementById('sit');
   var quest = document.getElementById('quest');
+  var ticket = document.getElementById('ticket');
     
   if (document.getElementById("contact").value === "" || document.getElementById("name").value === "" || document.getElementById("role").value === "" || document.getElementById("loan").value === "" || document.getElementById("stage").value === "" || document.getElementById("sit").value === "" || document.getElementById("quest").value === "") {
     document.getElementById("warning").style.display = "block";
   } else {
-    document.getElementById("request").innerHTML = contact.value + " / " + name.value + " / " + role.value + " / " + loan.value + " / " + stage.value + " / " + "The situation is: " + sit.value + " My question is: " + quest.value;
+    document.getElementById("request").innerHTML = contact.value + " / #" + ticket.value + ' / ' + role.value + " / " + stage.value + " / " + name.value + " / " + loan.value + " / " + "The situation is: " + sit.value + " My question is: " + quest.value;
 
     // Saved default template, not currently used.
     // document.getElementById("request").innerHTML = "Hello, I have a " + contact.value + "." + " Their name is " + name.value + ", and they're the " + role.value + " for Loan #" + loan.value + "." + " It's currently in the " + stage.value + " stage." + " Here's what's going on. " + sit.value + " Here's my question. " + quest.value;   
     
-    document.getelementById("warning").style.display = "none";
-  }
+    document.getElementById("warning").style.display = "none";
+  };
   
-}
+};
 
 // Dropdown
 

@@ -36,7 +36,7 @@
 <!--    Selection Row -->
         <div class="row"> 
           
-          <div class="col-md-4">
+          <div class="col-md-3">
         
           <label for="loan">Type of Contact:</label>
             <select class="form-control" id="contact" onchange="ticketPop()">
@@ -48,10 +48,17 @@
             </select>
             
           </div>
-          
-          <div class="col-md-4">
+
+          <div class="col-md-2" id='ticketSlot' style="display:none">
             
-          <label for="role">Their role:</label>
+          <label for="ticket">Ticket #</label>
+          <input type="text" class="form-control" id="ticket">
+
+          </div>
+          
+          <div class="col-md-3">
+            
+          <label for="role">Their Role:</label>
             <select class="form-control" id="role">
               <option selected="">Please Select</option>
               <option>Unknown</option>

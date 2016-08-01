@@ -12,8 +12,9 @@ body {
 #warning {
   color: red;
   display: none;
+  height: 10px;
 }
 
-#contact, #role, #loan, #stage, #name, #sit, #quest {
+#contact, #role, #loan, #stage, #name, #sit, #quest, #ticket {
 	font-weight: bold;
 }
