@@ -3,10 +3,10 @@
 // http://stackoverflow.com/questions/26709969/call-javascript-function-onchange-event-of-dropdown-list
 
 function ticketPop() {
-  if(document.getElementById('contact').value === "ticket") {
-    document.getElementById("ticketSlot").style.display = "block";
+  if(document.getElementById('contact').value === "Ticket") {
+    document.getElementById("ticketSlot").style.visibility = "visible";
   } else {
-    document.getElementById("ticketSlot").style.display = "none";
+    document.getElementById("ticketSlot").style.visibility = "hidden";
   };
 };
 
@@ -22,7 +22,7 @@ function generate() {
   var sit = document.getElementById('sit');
   var quest = document.getElementById('quest');
   var ticket = document.getElementById('ticket');
-    
+
   if (document.getElementById("contact").value === "" || document.getElementById("name").value === "" || document.getElementById("role").value === "" || document.getElementById("loan").value === "" || document.getElementById("stage").value === "" || document.getElementById("sit").value === "" || document.getElementById("quest").value === "") {
     document.getElementById("warning").style.display = "block";
   } else {
