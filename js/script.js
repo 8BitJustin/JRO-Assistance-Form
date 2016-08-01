@@ -1,3 +1,14 @@
+
+// ticketPop function, for ticket input to appear
+// http://stackoverflow.com/questions/26709969/call-javascript-function-onchange-event-of-dropdown-list
+
+// Will uncomment once code is finished
+// function ticketPop() {
+//   if(document.getElementById('contact').value === "ticket") {
+//       alert("Your message");
+//   };
+// };
+
 // Generate Function
 
 function generate() {
@@ -9,9 +20,7 @@ function generate() {
   var stage = document.getElementById('stage');
   var sit = document.getElementById('sit');
   var quest = document.getElementById('quest');
-  
-  
-  
+    
   if (document.getElementById("contact").value === "" || document.getElementById("name").value === "" || document.getElementById("role").value === "" || document.getElementById("loan").value === "" || document.getElementById("stage").value === "" || document.getElementById("sit").value === "" || document.getElementById("quest").value === "") {
     document.getElementById("warning").style.display = "block";
   } else {
