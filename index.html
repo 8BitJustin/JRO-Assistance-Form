@@ -126,39 +126,32 @@
               <label for="quest">Question:</label>
               <textarea type="text" class="form-control" rows="3" id="quest"></textarea>
             </div>
+
+            <div class="col-md-12 text-center buttonGrid">
+
+              <button type="button" class="btn btn-primary" onclick="generate()">Complete</button>
+
+              <button type="button" class="btn btn-primary" id="copyButton" onclick="copy('#request')">Copy to Clipboard</button>
+
+  <!-- Refresh page function: http://www.htmlgoodies.com/tutorials/getting_started/article.php/3479551 **Not being used now, link kept for reference purposes-->
+              <button type="button" class="btn btn-primary clear">Clear</button>
+
+              <br>
+
+              <br>
+
+              <h4 id="warning">Please fill out all fields.</h4>
+
+            </div>
+
           </div>
 
           <div class="form-group col-md-6 compForm">
             <label for="request">Completed Request<span onclick="game()">:</span></label>
-            <textarea class="form-control" rows="21" id="request"></textarea>
+            <textarea class="form-control" rows="25" id="request"></textarea>
           </div>
 
-        </div>
-        
-        <div class="row">
-
-          <div class="col-md-6 text-center">
-
-            <button type="button" class="btn btn-primary" onclick="generate()">Complete</button>
-
-            <button type="button" class="btn btn-primary" id="copyButton" onclick="copy('#request')">Copy to Clipboard</button>
-
-<!-- Refresh page function: http://www.htmlgoodies.com/tutorials/getting_started/article.php/3479551 **Not being used now, link kept for reference purposes-->
-            <button type="button" class="btn btn-primary clear">Clear</button>
-
-          </div>
-          
-          <div class="col-md-6 text-center">
-            
-            <h4 id="warning">Please fill out all fields.</h4>
-
-          </div>
-
-        </div>
-
-        <br />
-
-        
+        </div>       
         
       </div>
       

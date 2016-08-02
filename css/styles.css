@@ -9,10 +9,15 @@ body {
   background-color: #C0E1F0;
 }
 
+.buttonGrid {
+	padding: 0;
+}
+
 #warning {
   color: red;
-  display: none;
+  visibility: hidden;
   height: 10px;
+  margin-top: 10px;
 }
 
 #contact, #role, #loan, #stage, #name, #sit, #quest, #ticket, #request {
