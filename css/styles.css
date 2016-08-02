@@ -11,13 +11,16 @@ body {
 
 .buttonGrid {
 	padding: 0;
+	margin-top: 7px;
 }
 
 #warning {
-  color: red;
+  color: white;
   visibility: hidden;
   height: 10px;
   margin-top: 10px;
+  text-shadow: 0px 0px 15px #000040;
+
 }
 
 #contact, #role, #loan, #stage, #name, #sit, #quest, #ticket, #request {
