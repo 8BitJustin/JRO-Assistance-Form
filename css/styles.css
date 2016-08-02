@@ -15,6 +15,7 @@ body {
   height: 10px;
 }
 
-#contact, #role, #loan, #stage, #name, #sit, #quest, #ticket {
+#contact, #role, #loan, #stage, #name, #sit, #quest, #ticket, #request {
 	font-weight: bold;
 }
+
