@@ -26,7 +26,7 @@ function generate() {
   if (document.getElementById("contact").value === "" || document.getElementById("name").value === "" || document.getElementById("role").value === "" || document.getElementById("loan").value === "" || document.getElementById("stage").value === "" || document.getElementById("sit").value === "" || document.getElementById("quest").value === "") {
     document.getElementById("warning").style.visibility = "visible";
   } else {
-    document.getElementById("request").innerHTML = 'Contact: ' + contact.value + '\n' + 'Ticket #: ' + ticket.value + '\n' + 'Role: ' + role.value + '\n' + 'Loan Stage: ' + stage.value + '\n' + 'Name: ' + name.value + '\n' + 'Loan #: ' + loan.value + '\n' + 'The situation is: ' + sit.value + '\n' + 'My question is: ' + quest.value;
+    document.getElementById("request").innerHTML = 'Contact: ' + contact.value + '\n' + ' / ' + 'Ticket #: ' + ticket.value + '\n' + ' / ' + 'Role: ' + role.value + '\n' + ' / ' + 'Loan Stage: ' + stage.value + '\n' + ' / ' + 'Name: ' + name.value + '\n' + ' / ' + 'Loan #: ' + loan.value + '\n' + ' / ' + 'The situation is: ' + sit.value + '\n' + ' / ' + 'My question is: ' + quest.value;
 
     // Saved default template, not currently used.
     // document.getElementById("request").innerHTML = "Hello, I have a " + contact.value + "." + " Their name is " + name.value + ", and they're the " + role.value + " for Loan #" + loan.value + "." + " It's currently in the " + stage.value + " stage." + " Here's what's going on. " + sit.value + " Here's my question. " + quest.value;   
