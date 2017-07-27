@@ -8,7 +8,7 @@ body {
 }
 
 .jumbotron {
-/*  background-color: #C0E1F0;*/
+  background-color: #C0E1F0;
   background-image: url('https://placeimg.com/1000/1000/animals/grayscale');
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,4 +58,5 @@ label {
   -moz-box-shadow: inset 0px 0px 14px 1px #707070;
   -o-box-shadow: inset 0px 0px 14px 1px #707070;
   border: none;
+  opacity: .8;
 }
