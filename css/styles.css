@@ -60,3 +60,9 @@ label {
   border: none;
   opacity: .8;
 }
+
+.btn {
+  -webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.4);
+     -moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.4);
+          box-shadow: 0 10px 6px -6px rgba(0,0,0,0.4);
+}
