@@ -2,11 +2,20 @@ body {
   margin-top: 60px;
   background-color: white;
   color: #fdf9f3;
-  text-shadow: 0px 1px 5px #3f3f3f;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+              10px 20px 5px rgba(0,0,0,0.05),
+             -10px 20px 5px rgba(0,0,0,0.05);
 }
 
 .jumbotron {
-  background-color: #C0E1F0;
+/*  background-color: #C0E1F0;*/
+  background-image: url('https://placeimg.com/1000/1000/animals/grayscale');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  /* Color was removed in place of random image */
 }
 
 .buttonGrid {
@@ -27,3 +36,26 @@ body {
 	font-weight: bold;
 }
 
+label {
+  color: #508ec1;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
+               0px 3px 6px rgba(0,0,0,0.1),
+               0px 5px 10px rgba(255,255,255,0.5);
+/*  background-color: white;*/
+/*  border: 1px solid #508ec1;*/
+/*  border-radius: 7%;*/
+/*  padding: 1px 5px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;*/
+  /* Commented out items add background and box drop shadow */
+}
+
+/* Inset class is for the inset box shadows of the text areas */
+.inset {
+  box-shadow: inset 0px 0px 14px 1px #707070;
+  -webkit-box-shadow: inset 0px 0px 14px 1px #707070;
+  -moz-box-shadow: inset 0px 0px 14px 1px #707070;
+  -o-box-shadow: inset 0px 0px 14px 1px #707070;
+  border: none;
+}
