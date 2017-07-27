@@ -37,10 +37,10 @@ body {
 }
 
 label {
-  color: #508ec1;
-  text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
-               0px 3px 6px rgba(0,0,0,0.1),
-               0px 5px 10px rgba(255,255,255,0.5);
+  color: #aecae2;
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.4),
+               0px 1px 4px rgba(0,0,0,0.1),
+               0px 3px 10px rgba(0,0,0,0.7);
 /*  background-color: white;*/
 /*  border: 1px solid #508ec1;*/
 /*  border-radius: 7%;*/
@@ -53,10 +53,10 @@ label {
 
 /* Inset class is for the inset box shadows of the text areas */
 .inset {
-  box-shadow: inset 0px 0px 14px 1px #707070;
-  -webkit-box-shadow: inset 0px 0px 14px 1px #707070;
-  -moz-box-shadow: inset 0px 0px 14px 1px #707070;
-  -o-box-shadow: inset 0px 0px 14px 1px #707070;
+  box-shadow: inset 0px 0px 9px 2px #707070;
+  -webkit-box-shadow: inset 0px 0px 9px 2px #707070;
+  -moz-box-shadow: inset 0px 0px 9px 2px #707070;
+  -o-box-shadow: inset 0px 0px 9px 2px #707070;
   border: none;
   opacity: .8;
 }
