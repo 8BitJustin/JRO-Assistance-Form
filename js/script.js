@@ -24,6 +24,11 @@ function generate() {
   var quest = document.getElementById('steps');
   var quest = document.getElementById('quest');
 
+// Easter Egg
+  if (document.getElementById('name').value === 'Jason Krauss') {
+    document.getElementById('jumbo').style.backgroundImage = "url('img/hulkKrauss.jpg')";
+  } // /Easter Egg
+
   if (document.getElementById("contact").value === "Please Select" || document.getElementById("name").value === "" || document.getElementById("role").value === "Please Select" || document.getElementById("loan").value === "" || document.getElementById("stage").value === "Please Select" || document.getElementById("sit").value === "" || document.getElementById("quest").value === "" || document.getElementById("steps").value === "") {
     document.getElementById("warning").style.visibility = "visible";
   } else {
