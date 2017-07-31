@@ -14,27 +14,28 @@ function ticketPop() {
 
 function generate() {
   
-  var name = document.getElementById('name');
   var contact = document.getElementById('contact');
-  var role = document.getElementById('role');
-  var loan = document.getElementById('loan');
-  var stage = document.getElementById('stage');
-  var sit = document.getElementById('sit');
-  var quest = document.getElementById('quest');
   var ticket = document.getElementById('ticket');
+  var role = document.getElementById('role');
+  var stage = document.getElementById('stage');
+  var name = document.getElementById('name');
+  var loan = document.getElementById('loan');
+  var sit = document.getElementById('sit');
+  var quest = document.getElementById('steps');
+  var quest = document.getElementById('quest');
 
-  if (document.getElementById("contact").value === "" || document.getElementById("name").value === "" || document.getElementById("role").value === "" || document.getElementById("loan").value === "" || document.getElementById("stage").value === "" || document.getElementById("sit").value === "" || document.getElementById("quest").value === "") {
+  if (document.getElementById("contact").value === "Please Select" || document.getElementById("name").value === "" || document.getElementById("role").value === "Please Select" || document.getElementById("loan").value === "" || document.getElementById("stage").value === "Please Select" || document.getElementById("sit").value === "" || document.getElementById("quest").value === "" || document.getElementById("steps").value === "") {
     document.getElementById("warning").style.visibility = "visible";
   } else {
-    document.getElementById("request").innerHTML = 'Contact: ' + contact.value + '\n' + ' / ' + 'Ticket #: ' + ticket.value + '\n' + ' / ' + 'Role: ' + role.value + '\n' + ' / ' + 'Loan Stage: ' + stage.value + '\n' + ' / ' + 'Name: ' + name.value + '\n' + ' / ' + 'Loan #: ' + loan.value + '\n' + ' / ' + 'The situation is: ' + sit.value + '\n' + ' / ' + 'My question is: ' + quest.value;
+    document.getElementById("request").innerHTML = ' / ' + 'Contact: ' + contact.value + '\n' + ' / ' + 'Ticket #: ' + ticket.value + '\n' + ' / ' + 'Role: ' + role.value + '\n' + ' / ' + 'Loan Stage: ' + stage.value + '\n' + ' / ' + 'Name: ' + name.value + '\n' + ' / ' + 'Loan #: ' + loan.value + '\n' + ' / ' + 'The situation is: ' + sit.value + '\n' + ' / ' + 'Steps I\'ve taken are: ' + steps.value + '\n' + ' / ' + 'My question is: ' + quest.value;
 
     // Saved default template, not currently used.
     // document.getElementById("request").innerHTML = "Hello, I have a " + contact.value + "." + " Their name is " + name.value + ", and they're the " + role.value + " for Loan #" + loan.value + "." + " It's currently in the " + stage.value + " stage." + " Here's what's going on. " + sit.value + " Here's my question. " + quest.value;   
     
     document.getElementById("warning").style.visibility = "hidden";
-  };
+  }
   
-};
+}
 
 // Dropdown
 
@@ -60,7 +61,7 @@ function changeColor() {
     col.style.backgroundColor = colors[Math.floor((Math.random()*8)+1)];
 }
 
-  // Turns screen into Asteroids
+  // Turns screen into Asteroids (not currently active on page)
 function game() {
   var name = prompt("Oh! You found me.. What is your name?");
   var questionOne = prompt("Hello " + name + "." + " Do you want to play a game?" + " Yes or No");

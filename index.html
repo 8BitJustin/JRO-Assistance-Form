@@ -31,14 +31,15 @@
     
     <div class="row">
       
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-10 col-md-offset-1">
         
-<!--    Selection Row -->
+<!-- Selection Row -->
+
         <div class="row"> 
           
           <div class="col-md-3">
         
-          <label for="loan">Type of Contact:</label>
+          <label for="contact">Type of Contact:</label>
             <select class="form-control inset" id="contact" onchange="ticketPop()">
               <option selected="">Please Select</option>
               <option value='Online Chat'>Online Chat</option>
@@ -47,13 +48,6 @@
               <option value='Walk-In'>Walk-In</option>
             </select>
             
-          </div>
-
-          <div class="col-md-2" id='ticketSlot' style="visibility: hidden">
-            
-          <label for="ticket">Ticket #</label>
-          <input type="text" class="form-control inset" id="ticket">
-
           </div>
           
           <div class="col-md-3">
@@ -126,58 +120,97 @@
             </select>
           
           </div>
+
+          <div class="col-md-2" id='ticketSlot' style="visibility: hidden">
+            
+            <label for="ticket">Ticket #</label>
+            <input type="text" class="form-control inset" id="ticket">
+
+          </div>
           
         </div>
         
         <br />
-<!-- Inputs -->
+
+<!-- Contacts name and loan number row -->
 
         <div class="row">
 
-          <div class="col-md-6 inputBlock">
+          <div class="form-group col-md-6">
+            <label for="name">Contacts Name:</label>
+            <input type="text" class="form-control inset" id="name">
+          </div>
 
-            <div class="form-group">
-              <label for="name">Contacts Name:</label>
-              <input type="text" class="form-control inset" id="name">
+          <div class="form-group col-md-6">
+            <label for="loan">Loan #:</label>
+            <input type="text" class="form-control inset" id="loan">
+          </div>
+
+        </div>
+
+<!-- Situaion, steps taken, and question row -->
+
+        <div class="row">
+
+          <div class="form-group col-md-4">
+            <label for="sit">Situation:</label>
+            <textarea type="text" class="form-control inset" rows="5" id="sit"></textarea>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="steps">Steps taken to troubleshoot:</label>
+            <textarea type="text" class="form-control inset" rows="5" id="steps"></textarea>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="quest">Question:</label>
+            <textarea type="text" class="form-control inset" rows="5" id="quest"></textarea>
+          </div>
+
+        </div>
+
+<!-- Row for button group and warning -->
+
+        <div class="row">        
+
+          <div class="col-md-6 btn-group btn-group-justified" role='group'>
+
+            <div class="btn-group">
+
+              <button type="button" class="btn btn-info" onclick="generate()">Complete</button>
+
             </div>
 
-            <div class="form-group">
-              <label for="loan">Loan #:</label>
-              <input type="text" class="form-control inset" id="loan">
+            <div class="btn-group">
+
+              <button type="button" class="btn btn-info" id="copyButton" onclick="copy('#request')">Copy to Clipboard</button>
+
             </div>
 
-            <div class="form-group">
-              <label for="sit">Situation:</label>
-              <textarea type="text" class="form-control inset" rows="8" id="sit"></textarea>
-            </div>
+            <div class="btn-group">
 
-            <div class="form-group">
-              <label for="quest">Question:</label>
-              <textarea type="text" class="form-control inset" rows="3" id="quest"></textarea>
-            </div>
-
-            <div class="col-md-12 text-center buttonGrid">
-
-              <button type="button" class="btn btn-primary" onclick="generate()">Complete</button>
-
-              <button type="button" class="btn btn-primary" id="copyButton" onclick="copy('#request')">Copy to Clipboard</button>
-
-  <!-- Refresh page function: http://www.htmlgoodies.com/tutorials/getting_started/article.php/3479551 **Not being used now, link kept for reference purposes-->
-              <button type="button" class="btn btn-primary clear">Clear</button>
-
-              <br>
-
-              <br>
-
-              <h4 id="warning">Please fill out all fields.</h4>
+    <!-- Refresh page function: http://www.htmlgoodies.com/tutorials/getting_started/article.php/3479551 **Not being used now, link kept for reference purposes-->
+              <button type="button" class="btn btn-info clear">Clear</button>
 
             </div>
 
           </div>
+          
+          <div class="col-md-12 text-center">
 
-          <div class="form-group col-md-6 compForm">
+            <h4 id="warning">Please fill out all fields.</h4>
+
+          </div>
+
+        </div>
+
+<!-- Row for the completed form -->
+
+        <div class="row">
+
+          <div class="form-group col-md-12 compForm">
             <label for="request">Completed Request:</label>
-            <textarea class="form-control inset" rows="24" id="request"></textarea>
+            <textarea class="form-control inset" rows="12" id="request"></textarea>
           </div>
 
         </div>       

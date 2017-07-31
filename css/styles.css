@@ -1,5 +1,9 @@
+/***************************************************************************
+General
+***************************************************************************/
+
 body {
-  margin-top: 60px;
+  margin-top: 20px;
   background-color: white;
   color: #fdf9f3;
   text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
@@ -18,9 +22,51 @@ body {
   /* Color was removed in place of random image */
 }
 
-.buttonGrid {
-	padding: 0;
-	margin-top: 7px;
+.compForm {
+  margin-top: 20px;
+}
+
+#contact, #role, #loan, #stage, #name, #sit, #quest, #ticket, #request, #steps {
+	font-weight: bold;
+} /*Sets bold font weight for text within all fields*/
+
+label {
+  color: #aecae2;
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.7),
+               0px 1px 4px rgba(0,0,0,0.5),
+               0px 3px 10px rgba(0,0,0,0.9);
+/*  background-color: #dcdcdc;
+  border: 1px solid #508ec1;
+  border-radius: 7%;
+  padding: 1px 5px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+
+  Commented out items add background and box drop shadow */
+}
+
+.inset {
+  box-shadow: inset 0px 0px 9px 2px #555;
+  -webkit-box-shadow: inset 0px 0px 9px 2px #555;
+  -moz-box-shadow: inset 0px 0px 9px 2px #555;
+  -o-box-shadow: inset 0px 0px 9px 2px #555;
+  border: none;
+  opacity: .8;
+} /* Inset class is for the inset box shadows of the text areas */
+
+/***************************************************************************
+Button and warning
+***************************************************************************/
+
+.btn {
+  -webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.4);
+     -moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.4);
+          box-shadow: 0 10px 6px -6px rgba(0,0,0,0.4);
+} /* Button box shadow */
+
+.btn-group {
+  margin-top: 10px;
 }
 
 #warning {
@@ -29,40 +75,7 @@ body {
   height: 10px;
   margin-top: 10px;
   text-shadow: 0px 0px 15px #000040;
+  padding-top: 16px;
+} /*Sets parameters for the warning text*/
 
-}
 
-#contact, #role, #loan, #stage, #name, #sit, #quest, #ticket, #request {
-	font-weight: bold;
-}
-
-label {
-  color: #aecae2;
-  text-shadow: 0px 0px 1px rgba(0,0,0,0.4),
-               0px 1px 4px rgba(0,0,0,0.1),
-               0px 3px 10px rgba(0,0,0,0.7);
-/*  background-color: white;*/
-/*  border: 1px solid #508ec1;*/
-/*  border-radius: 7%;*/
-/*  padding: 1px 5px;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -6px #777;*/
-  /* Commented out items add background and box drop shadow */
-}
-
-/* Inset class is for the inset box shadows of the text areas */
-.inset {
-  box-shadow: inset 0px 0px 9px 2px #707070;
-  -webkit-box-shadow: inset 0px 0px 9px 2px #707070;
-  -moz-box-shadow: inset 0px 0px 9px 2px #707070;
-  -o-box-shadow: inset 0px 0px 9px 2px #707070;
-  border: none;
-  opacity: .8;
-}
-
-.btn {
-  -webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.4);
-     -moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.4);
-          box-shadow: 0 10px 6px -6px rgba(0,0,0,0.4);
-}
