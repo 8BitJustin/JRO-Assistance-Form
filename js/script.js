@@ -72,8 +72,9 @@ function game() {
   var questionOne = prompt("Hello " + name + "." + " Do you want to play a game?" + " Yes or No");
   var q1 = questionOne.toLowerCase();
   if (q1 === "yes" || "y") {
-    var s = document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='http://hi.kickassapp.com/kickass.js';void(0);
+    var s = document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='//hi.kickassapp.com/kickass.js';void(0);
   } else {
     alert("Too bad, I wanted to play...");
   }
 }
+
