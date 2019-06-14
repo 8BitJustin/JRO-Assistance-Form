@@ -6,14 +6,14 @@ body {
   margin-top: 20px;
   background-color: white;
   color: #fdf9f3;
-  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
-              10px 20px 5px rgba(0,0,0,0.05),
-             -10px 20px 5px rgba(0,0,0,0.05);
+  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+    10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+  font-size: 1.25em;
 }
 
 .jumbotron {
-  background-color: #C0E1F0;
-  background-image: url('https://placeimg.com/1000/1000/animals/grayscale');
+  background-color: #c0e1f0;
+  background-image: url("https://placeimg.com/1000/1000/animals/grayscale");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -26,16 +26,24 @@ body {
   margin-top: 20px;
 }
 
-#contact, #role, #loan, #stage, #name, #sit, #quest, #ticket, #request, #steps {
-	font-weight: bold;
+#contact,
+#role,
+#loan,
+#stage,
+#name,
+#sit,
+#quest,
+#ticket,
+#request,
+#steps {
+  font-weight: bold;
 } /*Sets bold font weight for text within all fields*/
 
 label {
   color: #aecae2;
-  text-shadow: 0px 0px 1px rgba(0,0,0,0.7),
-               0px 1px 4px rgba(0,0,0,0.5),
-               0px 3px 10px rgba(0,0,0,0.9);
-/*  background-color: #dcdcdc;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7), 0px 1px 4px rgba(0, 0, 0, 0.5),
+    0px 3px 10px rgba(0, 0, 0, 0.9);
+  /*  background-color: #dcdcdc;
   border: 1px solid #508ec1;
   border-radius: 7%;
   padding: 1px 5px;
@@ -52,7 +60,7 @@ label {
   -moz-box-shadow: inset 0px 0px 9px 2px #555;
   -o-box-shadow: inset 0px 0px 9px 2px #555;
   border: none;
-  opacity: .8;
+  opacity: 0.8;
 } /* Inset class is for the inset box shadows of the text areas */
 
 /***************************************************************************
@@ -60,9 +68,9 @@ Button and warning
 ***************************************************************************/
 
 .btn {
-  -webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.4);
-     -moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.4);
-          box-shadow: 0 10px 6px -6px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
 } /* Button box shadow */
 
 .btn-group {
@@ -77,5 +85,3 @@ Button and warning
   text-shadow: 0px 0px 15px #000040;
   padding-top: 16px;
 } /*Sets parameters for the warning text*/
-
-
