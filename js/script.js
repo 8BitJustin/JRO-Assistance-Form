@@ -68,9 +68,6 @@ function generate() {
       "My question to the senior analyst is: " +
       quest.value;
 
-    // Saved default template, not currently used.
-    // document.getElementById("request").innerHTML = "Hello, I have a " + contact.value + "." + " Their name is " + name.value + ", and they're the " + role.value + " for Loan #" + loan.value + "." + " It's currently in the " + stage.value + " stage." + " Here's what's going on. " + sit.value + " Here's my question. " + quest.value;
-
     document.getElementById("warning").style.visibility = "hidden";
   }
 }
@@ -111,22 +108,4 @@ function changeColor() {
   ];
   var col = document.getElementById("jumbotronColor");
   col.style.backgroundColor = colors[Math.floor(Math.random() * 8 + 1)];
-}
-
-// Turns screen into Asteroids (not currently active on page)
-function game() {
-  var name = prompt("Oh! You found me.. What is your name?");
-  var questionOne = prompt(
-    "Hello " + name + "." + " Do you want to play a game?" + " Yes or No"
-  );
-  var q1 = questionOne.toLowerCase();
-  if (q1 === "yes" || "y") {
-    var s = document.createElement("script");
-    s.type = "text/javascript";
-    document.body.appendChild(s);
-    s.src = "//hi.kickassapp.com/kickass.js";
-    void 0;
-  } else {
-    alert("Too bad, I wanted to play...");
-  }
 }
