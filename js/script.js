@@ -88,14 +88,20 @@ function generate() {
 
 $(".dropdown-toggle").dropdown();
 
-// Copy Function - http://stackoverflow.com/questions/22581345/click-button-copy-to-clipboard-using-jquery
+// Copy Function - https://www.w3schools.com/howto/howto_js_copy_clipboard.asp?fbclid=IwAR0gzpmVS0Z0v4UqpDm2WMFeFmrVcmV_2Kj-6FD_YwuRYJ-PMua3AZppbZc
 
-function copy(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
+function copyFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("request");
+
+  /* Select the text field */
+  copyText.select();
+
+  /* Copy the text inside the text field */
   document.execCommand("copy");
-  $temp.remove();
+
+  /* Alert the copied text */
+  alert("Text copied!");
 }
 
 // Added as 'easter eggs'
