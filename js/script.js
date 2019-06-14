@@ -41,40 +41,31 @@ function generate() {
     document.getElementById("warning").style.visibility = "visible";
   } else {
     document.getElementById("request").innerHTML =
-      " / " +
       "Contact: " +
       contact.value +
       "\n" +
-      " / " +
       "Ticket #: " +
       ticket.value +
       "\n" +
-      " / " +
-      "Role: " +
-      role.value +
-      "\n" +
-      " / " +
-      "Loan Stage: " +
-      stage.value +
-      "\n" +
-      " / " +
       "Name: " +
       name.value +
       "\n" +
-      " / " +
+      "Role: " +
+      role.value +
+      "\n" +
       "Loan #: " +
       loan.value +
       "\n" +
-      " / " +
-      "The situation is: " +
+      "Loan Stage: " +
+      stage.value +
+      "\n" +
+      "Why is the user contacting H2O support? " +
       sit.value +
       "\n" +
-      " / " +
-      "Steps I've taken are: " +
+      "Specific steps taken to troubleshoot: " +
       steps.value +
       "\n" +
-      " / " +
-      "My question is: " +
+      "My question to the senior analyst is: " +
       quest.value;
 
     // Saved default template, not currently used.
