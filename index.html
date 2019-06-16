@@ -33,11 +33,7 @@
             <div class="row">
               <div class="col-md-3">
                 <label for="contact">Type of Contact:</label>
-                <select
-                  class="form-control inset"
-                  id="contact"
-                  onchange="ticketPop()"
-                >
+                <select class="form-control inset" id="contact">
                   <option selected="">Please Select</option>
                   <option value="Online Chat">Online Chat</option>
                   <option value="Phone Call">Phone Call</option>
@@ -128,14 +124,26 @@
             <!-- Contacts name and loan number row -->
 
             <div class="row">
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-4">
                 <label for="name">Contacts Name:</label>
                 <input type="text" class="form-control inset" id="name" />
               </div>
 
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-4">
                 <label for="loan">Loan #:</label>
                 <input type="text" class="form-control inset" id="loan" />
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="channel">Channel:</label>
+                <select class="form-control inset" id="channel">
+                  <option selected="">Please Select</option>
+                  <option>Retail</option>
+                  <option>CD</option>
+                  <option>Wholesale</option>
+                  <option>CL1</option>
+                  <option>CL2-4</option>
+                </select>
               </div>
             </div>
 
