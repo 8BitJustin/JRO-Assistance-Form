@@ -18,6 +18,7 @@ function generate() {
   var stage = document.getElementById("stage");
   var name = document.getElementById("name");
   var loan = document.getElementById("loan");
+  var channel = document.getElementById("channel");
   var sit = document.getElementById("sit");
   var quest = document.getElementById("steps");
   var quest = document.getElementById("quest");
@@ -33,6 +34,7 @@ function generate() {
     document.getElementById("name").value === "" ||
     document.getElementById("role").value === "Please Select" ||
     document.getElementById("loan").value === "" ||
+    document.getElementById("channel").value === "Please Select" ||
     document.getElementById("stage").value === "Please Select" ||
     document.getElementById("sit").value === "" ||
     document.getElementById("quest").value === "" ||
@@ -55,6 +57,9 @@ function generate() {
       "\n" +
       "Loan #: " +
       loan.value +
+      "\n" +
+      "Channel: " +
+      channel.value +
       "\n" +
       "Loan Stage: " +
       stage.value +
