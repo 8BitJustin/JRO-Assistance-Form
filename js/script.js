@@ -35,7 +35,7 @@ function generate() {
     document.getElementById("role").value === "Please Select" ||
     document.getElementById("loan").value === "" ||
     document.getElementById("channel").value === "Please Select" ||
-    document.getElementById("stage").value === "Please Select" ||
+    document.getElementById("stage").value === "" || // Altered due to dropdown being temp disabled
     document.getElementById("sit").value === "" ||
     document.getElementById("quest").value === "" ||
     document.getElementById("steps").value === ""
