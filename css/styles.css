@@ -13,9 +13,11 @@ body {
 
 .jumbotron {
   background-color: #c0e1f0;
-  background-image: url("https://placeimg.com/1000/1000/animals/grayscale");
+  /* background-image: url("https://placeimg.com/1000/1000/animals/grayscale"); */
+  background-image: url("../img/chl_logo_02.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777;
@@ -41,9 +43,9 @@ body {
 } /*Sets bold font weight for text within all fields*/
 
 label {
-  color: #aecae2;
-  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7), 0px 1px 4px rgba(0, 0, 0, 0.5),
-    0px 3px 10px rgba(0, 0, 0, 0.9);
+  color: white;
+  text-shadow: -1px -1px 2px #1e4677, 1px -1px 2px #1e4677, -1px 1px 2px #1e4677,
+    1px 1px 2px #1e4677;
   /*  background-color: #dcdcdc;
   border: 1px solid #508ec1;
   border-radius: 7%;
@@ -56,10 +58,10 @@ label {
 }
 
 .inset {
-  box-shadow: inset 0px 0px 9px 2px #555;
-  -webkit-box-shadow: inset 0px 0px 9px 2px #555;
-  -moz-box-shadow: inset 0px 0px 9px 2px #555;
-  -o-box-shadow: inset 0px 0px 9px 2px #555;
+  box-shadow: inset 0px 0px 4px 2px #555;
+  -webkit-box-shadow: inset 0px 0px 4px 2px #555;
+  -moz-box-shadow: inset 0px 0px 4px 2px #555;
+  -o-box-shadow: inset 0px 0px 4px 2px #555;
   border: none;
   opacity: 0.8;
 } /* Inset class is for the inset box shadows of the text areas */
@@ -72,7 +74,14 @@ Button and warning
   -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
   box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
+  background-color: #1e4677;
+  border-color: #a8a9ae;
 } /* Button box shadow */
+
+.btn:hover {
+  background-color: #a8a9ae;
+  border-color: #1e4677;
+}
 
 .btn-group {
   margin-top: 10px;
