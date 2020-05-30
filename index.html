@@ -127,17 +127,17 @@
             <!-- Contacts name and loan number row -->
 
             <div class="row">
-              <div class="form-group col-md-4">
+              <div class="form-group col-md-3">
                 <label for="name">Contacts Name:</label>
                 <input type="text" class="form-control inset" id="name" />
               </div>
 
-              <div class="form-group col-md-4">
+              <div class="form-group col-md-3">
                 <label for="loan">Loan #:</label>
                 <input type="text" class="form-control inset" id="loan" />
               </div>
 
-              <div class="form-group col-md-4">
+              <div class="form-group col-md-3">
                 <label for="channel">Channel:</label>
                 <select class="form-control inset" id="channel">
                   <option selected="">Please Select</option>
@@ -147,6 +147,16 @@
                   <option>CL1</option>
                   <option>CL2-4</option>
                 </select>
+              </div>
+
+              <div class="form-group col-md-3">
+                <label for="channel">Closing Date:</label>
+                <div class="input-group date" id="closingDate">
+                  <input type="text" class="form-control inset" id="closing" />
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -250,7 +260,7 @@
 
     <!-- Clear function (jQuery) -->
     <script>
-      $(".clear").click(function() {
+      $(".clear").click(function () {
         location.reload();
       });
     </script>

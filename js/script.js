@@ -20,7 +20,7 @@ function generate() {
   var loan = document.getElementById("loan");
   var channel = document.getElementById("channel");
   var sit = document.getElementById("sit");
-  var quest = document.getElementById("steps");
+  var steps = document.getElementById("steps");
   var quest = document.getElementById("quest");
 
   // Easter Egg
@@ -109,7 +109,7 @@ function changeColor() {
     "#DA532C",
     "#AF1A3F",
     "#613CBC",
-    "#008AD2"
+    "#008AD2",
   ];
   var col = document.getElementById("jumbotronColor");
   col.style.backgroundColor = colors[Math.floor(Math.random() * 8 + 1)];
