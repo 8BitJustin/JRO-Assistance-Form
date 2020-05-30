@@ -47,39 +47,17 @@ function generate() {
       document.getElementById("warning").style.visibility = "hidden";
     }, 3000);
   } else {
-    document.getElementById("request").innerHTML =
-      "Channel: " +
-      channel.value +
-      "\n" +
-      "Contact: " +
-      contact.value +
-      "\n" +
-      "Ticket #: " +
-      ticket.value +
-      "\n" +
-      "Name: " +
-      name.value +
-      "\n" +
-      "Role: " +
-      role.value +
-      "\n" +
-      "Loan #: " +
-      loan.value +
-      "\n" +
-      "Est. Closing Date: " +
-      closing.value +
-      "\n" +
-      "Loan Stage: " +
-      stage.value +
-      "\n" +
-      "Why is the user contacting H2O support? " +
-      sit.value +
-      "\n" +
-      "Specific steps taken to troubleshoot: " +
-      steps.value +
-      "\n" +
-      "My question to the senior analyst is: " +
-      quest.value;
+    document.getElementById("request").innerHTML = `Channel: ${channel.value}\
+                  \nContact: ${contact.value}\
+                  \nTicket #: ${ticket.value}\
+                  \nName: ${name.value}\
+                  \nRole: ${role.value}\
+                  \nLoan #: ${loan.value}\
+                  \nEst. Closing Date: ${closing.value}\
+                  \nLoan Stage: ${stage.value}\
+                  \nWhy is the user contacting H2O support? ${sit.value}\
+                  \nSpecific steps taken to troubleshoot: ${steps.value}\
+                  \nMy question to the senior analyst is: ${quest.value}`;
 
     document.getElementById("warning").style.visibility = "hidden";
   }
