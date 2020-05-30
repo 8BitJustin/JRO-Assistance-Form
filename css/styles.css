@@ -93,7 +93,8 @@ Button and warning
   visibility: hidden;
   height: 10px;
   margin-top: 10px;
-  text-shadow: 0px 0px 15px #000040;
+  text-shadow: 2px 2px 5px #ff355e, -2px -2px 5px #ff355e, -2px 2px 5px #ff355e,
+    2px -2px 5px #ff355e;
   padding-top: 16px;
 } /*Sets parameters for the warning text*/
 

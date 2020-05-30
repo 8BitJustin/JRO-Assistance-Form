@@ -19,6 +19,7 @@ function generate() {
   var name = document.getElementById("name");
   var loan = document.getElementById("loan");
   var channel = document.getElementById("channel");
+  var closing = document.getElementById("closing");
   var sit = document.getElementById("sit");
   var steps = document.getElementById("steps");
   var quest = document.getElementById("quest");
@@ -32,17 +33,24 @@ function generate() {
   if (
     document.getElementById("contact").value === "Please Select" ||
     document.getElementById("name").value === "" ||
-    document.getElementById("role").value === "Please Select" ||
+    document.getElementById("role").value === "" || // Altered due to dropdown being disabled and manual entry requested
     document.getElementById("loan").value === "" ||
     document.getElementById("channel").value === "Please Select" ||
+    document.getElementById("closing").value === "" ||
     document.getElementById("stage").value === "" || // Altered due to dropdown being temp disabled
     document.getElementById("sit").value === "" ||
     document.getElementById("quest").value === "" ||
     document.getElementById("steps").value === ""
   ) {
     document.getElementById("warning").style.visibility = "visible";
+    setTimeout(function () {
+      document.getElementById("warning").style.visibility = "hidden";
+    }, 3000);
   } else {
     document.getElementById("request").innerHTML =
+      "Channel: " +
+      channel.value +
+      "\n" +
       "Contact: " +
       contact.value +
       "\n" +
@@ -58,8 +66,8 @@ function generate() {
       "Loan #: " +
       loan.value +
       "\n" +
-      "Channel: " +
-      channel.value +
+      "Est. Closing Date: " +
+      closing.value +
       "\n" +
       "Loan Stage: " +
       stage.value +
