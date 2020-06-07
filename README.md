@@ -1,6 +1,4 @@
-# Project Title
-
-JRO Assistance Form
+# JRO Assistance Form
 
 ## Purpose
 
