@@ -39,7 +39,7 @@ And three buttons:
 - Copy to Clipboard - Copies the text within the 'completion' box
 - Clear - Does a hard refresh of the page, clearing/resetting all boxes
 
-Once all fields have date input, the **Complete** button is pressed. This button/function takes the values from each field, and reorganizes them in a structured layout that makes it easier to read. This is then placed within the **_Completed Request_** box.
+Once all fields have date input, the **Complete** button is pressed. This button/function takes the values from each field, and reorganizes them in a structured layout that makes it easier to read. This is then placed within the **Completed Request** box.
 
 From here, the **Copy to Clipboard** button is pressed. This will copy the text to your clipboard, and a box will pop up stating the text is copied. This makes it easier to paste the text into a chat box or email for Senior leadership.
 
