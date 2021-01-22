@@ -3,29 +3,28 @@ General
 ***************************************************************************/
 
 body {
-  margin-top: 20px;
-  background-color: white;
-  color: #fdf9f3;
-  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
-    10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
-  font-size: 1.25em;
+	margin-top: 20px;
+	background-color: white;
+	color: #fdf9f3;
+	text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+		10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+	font-size: 1.25em;
 }
 
 .jumbotron {
-  background-color: #c0e1f0;
-  /* background-image: url("https://placeimg.com/1000/1000/animals/grayscale"); */
-  background-image: url("../img/chl_logo_02.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -6px #777;
-  /* Color was removed in place of random image */
+	background-color: #305582;
+	/* background-image: url("https://placeimg.com/1000/1000/animals/grayscale"); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+	/* Color was removed in place of random image */
 }
 
 .compForm {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 #contact,
@@ -40,14 +39,14 @@ body {
 #ticket,
 #request,
 #steps {
-  font-weight: 100;
+	font-weight: 100;
 } /*Sets bold font weight for text within all fields*/
 
 label {
-  color: white;
-  text-shadow: -1px -1px 2px #1e4677, 1px -1px 2px #1e4677, -1px 1px 2px #1e4677,
-    1px 1px 2px #1e4677;
-  /*  background-color: #dcdcdc;
+	color: white;
+	text-shadow: -1px -1px 2px #1e4677, 1px -1px 2px #1e4677,
+		-1px 1px 2px #1e4677, 1px 1px 2px #1e4677;
+	/*  background-color: #dcdcdc;
   border: 1px solid #508ec1;
   border-radius: 7%;
   padding: 1px 5px;
@@ -59,12 +58,12 @@ label {
 }
 
 .inset {
-  box-shadow: inset 0px 0px 4px 2px #555;
-  -webkit-box-shadow: inset 0px 0px 4px 2px #555;
-  -moz-box-shadow: inset 0px 0px 4px 2px #555;
-  -o-box-shadow: inset 0px 0px 4px 2px #555;
-  border: none;
-  opacity: 0.8;
+	box-shadow: inset 0px 0px 4px 2px #555;
+	-webkit-box-shadow: inset 0px 0px 4px 2px #555;
+	-moz-box-shadow: inset 0px 0px 4px 2px #555;
+	-o-box-shadow: inset 0px 0px 4px 2px #555;
+	border: none;
+	opacity: 0.8;
 } /* Inset class is for the inset box shadows of the text areas */
 
 /***************************************************************************
@@ -72,30 +71,30 @@ Button and warning
 ***************************************************************************/
 
 .btn {
-  -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
-  background-color: #1e4677;
-  border-color: #a8a9ae;
+	-webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
+	background-color: #1e4677;
+	border-color: #a8a9ae;
 } /* Button box shadow */
 
 .btn:hover {
-  background-color: #a8a9ae;
-  border-color: #1e4677;
+	background-color: #a8a9ae;
+	border-color: #1e4677;
 }
 
 .btn-group {
-  margin-top: 10px;
+	margin-top: 10px;
 }
 
 #warning {
-  color: white;
-  visibility: hidden;
-  height: 10px;
-  margin-top: 10px;
-  text-shadow: 2px 2px 5px #ff355e, -2px -2px 5px #ff355e, -2px 2px 5px #ff355e,
-    2px -2px 5px #ff355e;
-  padding-top: 16px;
+	color: white;
+	visibility: hidden;
+	height: 10px;
+	margin-top: 10px;
+	text-shadow: 2px 2px 5px #ff355e, -2px -2px 5px #ff355e,
+		-2px 2px 5px #ff355e, 2px -2px 5px #ff355e;
+	padding-top: 16px;
 } /*Sets parameters for the warning text*/
 
 /***************************************************************************
@@ -103,5 +102,5 @@ Datepicker
 ***************************************************************************/
 
 .datepicker {
-  background-color: #1e4677;
+	background-color: #1e4677;
 }
